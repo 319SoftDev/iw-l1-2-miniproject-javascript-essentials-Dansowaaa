@@ -18,26 +18,44 @@ let shoes = 89.78;
 
 
 // 1. If divided evenly, how much would each sibling get for the week?
+weeklyAllowance= weeklyAllowance/3
+console.log ("1. Each sibling has a weeklyAllowance of", weeklyAllowance)
 
 // 2. How many games can Jordan buy with their cut?
+let JordanGames = weeklyAllowance/game
+console.log("2. Jordan can buy", Math.floor (JordanGames), "games")
 
 // 3. The cost of games just went up by a dollar and shoes are on sale at 50% (half) off. Change the variables to their new prices.
+game = game+1
+shoes= shoes/2
+
+console.log("3. The cost of game will now be",  Math.round (game), "the price of shoes on sale is now", shoes )
 
 // 4. Quinn and Ricardo are twins. If they put their money together, how many on sale shoes can they buy in a month (4 weeks)?
+let saving=(weeklyAllowance*2) *4
+let sales= saving/shoes
+
+console.log( "4. The Twins bought", Math.floor (sales), "shoes")
 
 // 5. How many more games can the twins buy if they put their money together?
+let twins=saving/game
+console.log("5. The Twins bought ", Math.floor (twins),"games")
 
 // 6. Print out the three siblings' names. "The three siblings are __, __, and ___."
+console.log("6. The three siblings are", sibling1,", ", sibling2, "and" ,sibling3)
 
 // 7. Use a built-in method to count how many characters are in Ricardo's name.
+console.log("7. There are", sibling3.length, "characters in", sibling3)
 
 // 8. Use a built-in method to print out the string "RICARDO MONTOYA DE LA ROSA RAMIREZ"
-
+console.log("8.", sibling3.toUpperCase())
 // 9. Use a built-in method to print out the string "ricardo montoya de la rosa ramirez"
-
+console.log("9.", sibling3.toLowerCase() )
 // 10. Use a built-in method to print out Ricardo's name, but with all the instances of the letter a removed or deleted.
-
+console.log("10.", sibling3.replaceAll("a", ' '))
 // 11. Use a built-in method to print out "De La Rosa"
+console.log("11.", sibling3.slice(15,27))
+
 
 // Medium Challenges
 
